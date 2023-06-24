@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("asset/images/See.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #11009E;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.app {
+    width: 100%;
+    max-width: 768px;
+}
+
+.app header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.app header h1 {
+    background-image: linear-gradient(to right, #16FF00, #FFED00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    border: 5px solid #FC7300;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.app header button {
+    background-image: linear-gradient(to right, #16FF00, #FFED00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #E9F8F9;
+    box-shadow: 0 0 4px lightgray;
+    margin-bottom: 1.5rem;
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.item input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: #439A97;
+    font-size: 20px;
+    flex: 1 1 0%;
+    margin-right: 1rem;
+}
+
+
+.item input[type="text"]:not(:disabled) {
+    border-bottom: 3px solid white;
+}
+
+.item.complete {
+    opacity: 0.7;
+}
+
+.item.complete input[type="text"] {
+    text-decoration: line-through;
+}
+
+.item:hover,
+.item:focus-within {
+    outline: 2px solid #6554AF;
+}
+
+.actions button {
+    color: #263A29;
+    margin-right: 1rem;
+    opacity: 0.8;
+    transform: 0.1s;
+}
+
+.actions button.remove-btn {
+    color: #F94A29;
+}
+
+.actions button:hover {
+    opacity: 1;
+}
+
+.actions button:last-of-type {
+    margin-right: 0;
+}
