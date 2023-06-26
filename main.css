@@ -106,7 +106,7 @@ main {
 
 .item:hover,
 .item:focus-within {
-    outline: 2px solid #6554AF;
+    outline: 2px solid #FC7300;
 }
 
 .actions button {
